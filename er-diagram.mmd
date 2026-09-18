@@ -1,0 +1,27 @@
+erDiagram
+    STUDENT ||--o{ ENROLLMENT : has
+    COURSE ||--o{ ENROLLMENT : contains
+    COURSE ||--o{ ATTENDANCE : records
+    STUDENT ||--o{ ATTENDANCE : receives
+    STUDENT {
+      string id PK
+      string name
+      string email
+      string department
+    }
+    COURSE {
+      string code PK
+      string title
+      string instructor
+      int capacity
+    }
+    ENROLLMENT {
+      string student_id FK
+      string course_code FK
+    }
+    ATTENDANCE {
+      date attendance_date
+      string course_code FK
+      string student_id FK
+      boolean present
+    }

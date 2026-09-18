@@ -1,0 +1,12 @@
+flowchart TD
+    U[User] --> UI[Console Menu]
+    UI --> SM[Student Management]
+    UI --> CM[Course Management]
+    UI --> EM[Enrollment Management]
+    UI --> AM[Attendance Management]
+    UI --> RP[Reporting]
+    SM --> MEM[(In-memory Collections)]
+    CM --> MEM
+    EM --> MEM
+    AM --> MEM
+    RP --> MEM

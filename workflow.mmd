@@ -1,0 +1,17 @@
+flowchart TD
+    A([Start]) --> B[Seed sample data]
+    B --> C[Display menu]
+    C --> D{Choose operation}
+    D -->|Add student| E[Validate and store student]
+    D -->|Add course| F[Validate and store course]
+    D -->|Enroll| G[Validate records and capacity]
+    D -->|Attendance| H[Mark present/absent]
+    D -->|View| I[Display details or roster]
+    D -->|Report| J[Calculate campus statistics]
+    E --> C
+    F --> C
+    G --> C
+    H --> C
+    I --> C
+    J --> C
+    D -->|Exit| K([End])

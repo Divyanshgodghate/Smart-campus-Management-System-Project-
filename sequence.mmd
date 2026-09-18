@@ -1,0 +1,10 @@
+sequenceDiagram
+    actor User
+    participant App
+    participant Store as In-memory Store
+    User->>App: Select Enroll
+    App->>Store: Check student and course
+    Store-->>App: Validation result
+    App->>Store: Add student to roster
+    Store-->>App: Success/duplicate
+    App-->>User: Display result

@@ -1,0 +1,18 @@
+classDiagram
+    class Main
+    class SmartCampusManagementSystem
+    class Student
+    class Course
+    class StudentService
+    class CourseService
+    class EnrollmentService
+    class AttendanceService
+    class ReportService
+    Main --> SmartCampusManagementSystem
+    SmartCampusManagementSystem --> StudentService
+    SmartCampusManagementSystem --> CourseService
+    SmartCampusManagementSystem --> EnrollmentService
+    SmartCampusManagementSystem --> AttendanceService
+    SmartCampusManagementSystem --> ReportService
+    StudentService --> Student
+    CourseService --> Course
